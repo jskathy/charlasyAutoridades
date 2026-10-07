@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal para Autoridad de Mesa</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/componentes.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">Portal para autoridad de mesa</div>
+        <nav>
+            <a href="registro.html">Postulación Ciudadana</a>
+            <a href="#charlasOrientativas">Charlas Orientativas</a>
+            <a href="#mapaDeSedes">Mapa de Sedes</a>
+        </nav>
+    </header>
+
+    <div class="big-container">
+
+        <!-- SECCIÓN PRINCIPAL: INTRODUCCIÓN -->
+        <section class="introduccion">
+            <div class="miniContainer">
+                <h5 id="EleccionesPresidenciales2026">
+                    • ELECCIONES PRESIDENCIALES 2026 · CONVOCATORIA CÍVICA OFICIAL
+                </h5>
+                <h1>
+                    Postulación Abierta de <br> Autoridades de Mesa
+                </h1>
+                <p>Sea custodio de la voluntad popular y garantice el normal desarrollo del sufragio en su mesa
+                    electoral. Los ciudadanos pueden postularse de forma voluntaria, registrar sus datos con validez
+                    jurídica y concurrir libremente a las charlas orientativas presenciales en las sedes habilitadas en
+                    la ciudad, sin requerir inscripción previa.
+                </p>
+
+                <div class="botones-container">
+                    <button class="Postular">
+                        <a href="registro.html">Postularme como Autoridad de Mesa</a>
+                    </button>
+                    <button class="Explorar">
+                        <a href="#charlasOrientativas">Explorar Charlas y Mapa de Sedes</a>
+                    </button>
+                </div>
+            </div>
+
+            <div class="imagenContainer">
+                <img src="assets/img/urnas.jfif" alt="urnas">
+            </div>
+        </section>
+
+        <!-- SECCIÓN CHARLAS ORIENTATIVAS: las tarjetas las dibuja js/paginaCharlas.js con los datos de db.json -->
+        <section id="charlasOrientativas">
+            <div class="contenedorCharlas" id="listaCharlas">
+                <p class="aviso-vacio estado">Cargando charlas...</p>
+            </div>
+        </section>
+
+        <section id="mapaDeSedes">
+            <h2>Mapa de Sedes Habilitadas</h2>
+            <p>Elegí "Ver sede en el mapa" en una charla para ubicarla automáticamente.</p>
+            <p id="estadoMapa" class="estado" role="status"></p>
+            <div id="map"></div>
+
+            <form id="formBuscarDireccion" class="buscar-direccion">
+                <label for="direccionBuscada">Probar con otra dirección</label>
+                <input type="text" id="direccionBuscada" placeholder="Ej. Corrientes 1234">
+                <button type="submit">Ubicar</button>
+            </form>
+            <ul id="candidatos" class="candidatos"></ul>
+        </section>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script type="module" src="js/paginaCharlas.js"></script>
+</body>
+
+</html>

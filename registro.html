@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Registro autoridad de mesa</title>
+  <link rel="stylesheet" href="css/registro.css">
+  <link rel="stylesheet" href="css/componentes.css">
+</head>
+
+<body>
+  <header>
+    <div class="logo">Portal para autoridad de mesa</div>
+    <nav>
+      <a href="registro.html">Postulación Ciudadana</a>
+      <a href="index.html#charlasOrientativas">Charlas Orientativas</a>
+      <a href="index.html#mapaDeSedes">Mapa de Sedes</a>
+    </nav>
+  </header>
+
+  <div class="form-container">
+    <h2>Inscripción Autoridad de Mesa</h2>
+    <p>Complete el formulario para postularse como autoridad de mesa.</p>
+
+    <!-- novalidate: las validaciones las hace js/logica/postulante.js para mostrar todos los mensajes juntos -->
+    <form id="registroForm" novalidate>
+
+      <label for="distrito">Distrito Electoral</label>
+      <select id="distrito" name="distrito">
+        <option value="">Seleccione...</option>
+      </select>
+      <small class="mensaje-error" id="error-distrito"></small>
+
+      <label for="nombre">Nombre</label>
+      <input type="text" id="nombre" name="nombre" placeholder="Ej. Juan" autocomplete="given-name">
+      <small class="mensaje-error" id="error-nombre"></small>
+
+      <label for="apellido">Apellido</label>
+      <input type="text" id="apellido" name="apellido" placeholder="Ej. Pérez" autocomplete="family-name">
+      <small class="mensaje-error" id="error-apellido"></small>
+
+      <label for="dni">DNI</label>
+      <input type="text" id="dni" name="dni" placeholder="Ej. 12.345.678">
+      <small class="mensaje-error" id="error-dni"></small>
+
+      <label for="fecha">Fecha de Nacimiento</label>
+      <input type="date" id="fecha" name="fecha" placeholder="" autocomplete="bday">
+      <small class="mensaje-error" id="error-fecha"></small>
+
+      <label for="direccion">Dirección</label>
+      <input type="text" id="direccion" name="direccion" placeholder="Ej. Guadalajara 1234" autocomplete="street-address">
+      <small class="mensaje-error" id="error-direccion"></small>
+
+      <label for="telefono">Teléfono</label>
+      <input type="tel" id="telefono" name="telefono" placeholder="Ej. +54 9 11 1234 5678" autocomplete="tel">
+      <small class="mensaje-error" id="error-telefono"></small>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Ej. juan.perez@email.com" autocomplete="email">
+      <small class="mensaje-error" id="error-email"></small>
+
+      <label>¿Fue autoridad de mesa previamente?</label>
+      <div class="radio-group">
+        <label><input type="radio" name="fueAutoridad" value="si"> Sí</label>
+        <label><input type="radio" name="fueAutoridad" value="no"> No</label>
+      </div>
+      <small class="mensaje-error" id="error-fueAutoridad"></small>
+
+      <label>¿Cumplió la capacitación?</label>
+      <div class="radio-group">
+        <label><input type="radio" name="cumplioCapacitacion" value="si"> Sí</label>
+        <label><input type="radio" name="cumplioCapacitacion" value="no"> No</label>
+      </div>
+      <small class="mensaje-error" id="error-cumplioCapacitacion"></small>
+
+      <label>¿Es afiliado en alguna agrupación?</label>
+      <div class="radio-group">
+        <label><input type="radio" name="esAfiliado" value="si"> Sí</label>
+        <label><input type="radio" name="esAfiliado" value="no"> No</label>
+      </div>
+      <small class="mensaje-error" id="error-esAfiliado"></small>
+
+      <label for="partido">Detalle del partido si corresponde</label>
+      <input type="text" id="partido" name="partido" placeholder="Ej. Partido X" disabled>
+      <small class="mensaje-error" id="error-partido"></small>
+
+      <label>¿Está interesado en participar en alguna charla?</label>
+      <div class="radio-group">
+        <label><input type="radio" name="interesadoEnCharlas" value="si"> Sí</label>
+        <label><input type="radio" name="interesadoEnCharlas" value="no"> No</label>
+      </div>
+      <small class="mensaje-error" id="error-interesadoEnCharlas"></small>
+
+      <label for="charlas">Charla de orientación de su interés</label>
+      <select id="charlas" name="charlas" disabled>
+        <option value="">Seleccione una charla...</option>
+      </select>
+      <small class="mensaje-error" id="error-charlas"></small>
+
+      <button type="submit" class="submit-btn" id="botonEnviar">Postularme</button>
+      <div id="resultado" class="resultado" role="status"></div>
+    </form>
+  </div>
+
+  <script type="module" src="js/registro.js"></script>
+</body>
+
+</html>

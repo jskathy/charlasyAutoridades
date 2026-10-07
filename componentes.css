@@ -1,0 +1,30 @@
+/* Estilos agregados por las correcciones. Va DESPUÉS de main.css / registro.css para completar o ajustar lo que ya tenían. */
+
+* { box-sizing: border-box; }
+
+/* El header es fijo (58px): sin este margen tapaba el principio del formulario */
+body { padding-top: 90px; }
+
+/* Mensajes de estado (cargando / error) */
+.estado { min-height: 1.4em; color: #4a5568; }
+.estado.error { color: #b42318; }
+.aviso-vacio { grid-column: 1 / -1; text-align: center; margin: 20px 0; }
+
+/* Búsqueda libre de direcciones */
+.buscar-direccion { display: flex; flex-wrap: wrap; gap: 10px; align-items: flex-end; margin-top: 15px; }
+.buscar-direccion label { width: 100%; font-weight: bold; color: #0f172a; }
+.buscar-direccion input { flex: 1; min-width: 200px; padding: 8px; border: 1px solid #ccc; border-radius: 4px; }
+.buscar-direccion button { background: #0f172a; color: #fff; border: none; padding: 9px 18px; border-radius: 6px; cursor: pointer; }
+.candidatos { list-style: none; padding: 0; margin: 10px 0 0; display: grid; gap: 8px; }
+.candidatos button { width: 100%; text-align: left; padding: 10px 12px; background: #fff; border: 1px solid #cbd5e1; border-radius: 6px; cursor: pointer; }
+.candidatos button:hover { background: #f1f5f9; }
+
+/* Validaciones del formulario de registro */
+.mensaje-error { display: block; color: #b42318; font-size: 0.85rem; margin-top: 4px; }
+input.invalido, select.invalido { border-color: #b42318; }
+input:disabled, select:disabled { background: #f1f5f9; cursor: not-allowed; }
+.submit-btn:disabled { opacity: 0.6; cursor: not-allowed; }
+.resultado:empty { display: none; }
+.resultado { margin-top: 15px; padding: 12px; border-radius: 6px; font-size: 0.95rem; }
+.resultado.exito { background: #e7f6ec; color: #14532d; border: 1px solid #86efac; }
+.resultado.error { background: #fdecea; color: #7f1d1d; border: 1px solid #fca5a5; }

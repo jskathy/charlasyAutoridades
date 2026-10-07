@@ -1,0 +1,14 @@
+{
+  "name": "portal-autoridades-de-mesa",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Prototipo (prueba de concepto) del Portal para Autoridades de Mesa - Ingeniería de Software, UNGS",
+  "scripts": {
+    "start": "json-server db.json --port 3001 --static .",
+    "test": "node pruebas/pruebas.mjs"
+  },
+  "dependencies": {
+    "json-server": "1.0.0-beta.15"
+  }
+}

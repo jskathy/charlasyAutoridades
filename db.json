@@ -1,0 +1,215 @@
+{
+  "distritos": [
+    {
+      "id": "d1",
+      "nombre": "Ciudad Autónoma de Buenos Aires"
+    },
+    {
+      "id": "d2",
+      "nombre": "Buenos Aires"
+    },
+    {
+      "id": "d3",
+      "nombre": "Catamarca"
+    },
+    {
+      "id": "d4",
+      "nombre": "Chaco"
+    },
+    {
+      "id": "d5",
+      "nombre": "Chubut"
+    },
+    {
+      "id": "d6",
+      "nombre": "Córdoba"
+    },
+    {
+      "id": "d7",
+      "nombre": "Corrientes"
+    },
+    {
+      "id": "d8",
+      "nombre": "Entre Ríos"
+    },
+    {
+      "id": "d9",
+      "nombre": "Formosa"
+    },
+    {
+      "id": "d10",
+      "nombre": "Jujuy"
+    },
+    {
+      "id": "d11",
+      "nombre": "La Pampa"
+    },
+    {
+      "id": "d12",
+      "nombre": "La Rioja"
+    },
+    {
+      "id": "d13",
+      "nombre": "Mendoza"
+    },
+    {
+      "id": "d14",
+      "nombre": "Misiones"
+    },
+    {
+      "id": "d15",
+      "nombre": "Neuquén"
+    },
+    {
+      "id": "d16",
+      "nombre": "Río Negro"
+    },
+    {
+      "id": "d17",
+      "nombre": "Salta"
+    },
+    {
+      "id": "d18",
+      "nombre": "San Juan"
+    },
+    {
+      "id": "d19",
+      "nombre": "San Luis"
+    },
+    {
+      "id": "d20",
+      "nombre": "Santa Cruz"
+    },
+    {
+      "id": "d21",
+      "nombre": "Santa Fe"
+    },
+    {
+      "id": "d22",
+      "nombre": "Santiago del Estero"
+    },
+    {
+      "id": "d23",
+      "nombre": "Tierra del Fuego"
+    },
+    {
+      "id": "d24",
+      "nombre": "Tucumán"
+    }
+  ],
+  "sedes": [
+    {
+      "id": "s1",
+      "nombre": "Facultad de Derecho - UBA",
+      "direccion": "Av. Figueroa Alcorta 2263"
+    },
+    {
+      "id": "s2",
+      "nombre": "Centro Cultural Recoleta",
+      "direccion": "Junín 1930"
+    },
+    {
+      "id": "s3",
+      "nombre": "Sede Comunal 13 Belgrano",
+      "direccion": "Av. Cabildo 3067"
+    },
+    {
+      "id": "s4",
+      "nombre": "Universidad Tecnológica Nacional (FRBA)",
+      "direccion": "Av. Medrano 951"
+    },
+    {
+      "id": "s5",
+      "nombre": "Palacio de Tribunales - Sala Electoral",
+      "direccion": "Talcahuano 550"
+    }
+  ],
+  "charlas": [
+    {
+      "id": "charla-1",
+      "nombre": "Apertura de Mesa, Armado del Cuarto Oscuro y Control de Padrones",
+      "tema": "Capacitación integral sobre la llegada a las 07:30 hs, verificación de urnas inviolables, colocación de fajas de seguridad, ordenamiento y reposición de boletas en el cuarto oscuro, acreditación formal de fiscales partidarios y cotejo del padrón electoral definitivo.",
+      "fecha": "2026-10-14",
+      "horaInicio": "09:30",
+      "horaFin": "11:30",
+      "sala": "Salón de Pasos Perdidos (Planta Principal)",
+      "sedeId": "s1"
+    },
+    {
+      "id": "charla-2",
+      "nombre": "Accesibilidad Electoral y Cuarto Oscuro Accesible (COA)",
+      "tema": "Protocolos para garantizar el voto independiente de electores con discapacidad visual, motora, auditiva o personas mayores. Funcionamiento del Cuarto Oscuro Accesible (COA), plantilla guía para personas ciegas y procedimiento de voto asistido con persona de confianza.",
+      "fecha": "2026-10-20",
+      "horaInicio": "18:00",
+      "horaFin": "20:00",
+      "sala": "Auditorio El Aleph",
+      "sedeId": "s2"
+    },
+    {
+      "id": "charla-3",
+      "nombre": "Claves del Escrutinio y Confección Ágil de Documentación",
+      "tema": "Sesión práctica diseñada para autoridades designadas en Comunas 12, 13 y 14. Demostración en vivo de distribución de mesas de conteo, verificación de pilas de votos y firma unificada con fiscales partidarios para finalizar el comicio con precisión y serenidad.",
+      "fecha": "2026-10-29",
+      "horaInicio": "18:30",
+      "horaFin": "20:30",
+      "sala": "Salón Cívico de Actos y Participación",
+      "sedeId": "s3"
+    },
+    {
+      "id": "charla-4",
+      "nombre": "Taller Práctico de Resolución de Casos Críticos en Mesa",
+      "tema": "Resolución práctica con material electoral auténtico: qué hacer si falta el presidente de mesa a las 08:00 hs, faltante total o rotura de boletas en el cuarto oscuro, dudas sobre la identidad del elector, rotura involuntaria de sobre y manejo de situaciones de tensión.",
+      "fecha": "2026-10-27",
+      "horaInicio": "17:30",
+      "horaFin": "20:00",
+      "sala": "Aula Magna de Ingeniería",
+      "sedeId": "s4"
+    },
+    {
+      "id": "charla-5",
+      "nombre": "Escrutinio Provisorio, Confección de Actas y Certificados Oficiales",
+      "tema": "Guía paso a paso para el conteo a partir de las 18:00 hs: clasificación estricta de votos afirmativos, en blanco, nulos, recurridos e impugnados. Métodos para evitar discrepancias aritméticas en el llenado del acta de escrutinio, telegrama postal y certificado de escrutinio.",
+      "fecha": "2026-10-17",
+      "horaInicio": "14:00",
+      "horaFin": "16:30",
+      "sala": "Auditorio Central Dr. Cecilio Sánchez",
+      "sedeId": "s5"
+    }
+  ],
+  "postulantes": [
+    {
+      "id": "p1",
+      "distritoId": "d1",
+      "nombre": "Luz",
+      "apellido": "Fernández",
+      "dni": "40123456",
+      "fechaNacimiento": "1997-05-29",
+      "direccion": "Guadalajara 1234",
+      "telefono": "+541139339977",
+      "email": "luz.fernandez@email.com",
+      "fueAutoridadAntes": false,
+      "cumplioCapacitacion": false,
+      "esAfiliado": false,
+      "partido": null,
+      "interesadoEnCharlas": true,
+      "charlaId": "charla-1"
+    },
+    {
+      "id": "p2",
+      "distritoId": "d2",
+      "nombre": "Martín",
+      "apellido": "Lij",
+      "dni": "39876543",
+      "fechaNacimiento": "1996-03-07",
+      "direccion": "Mitre 456",
+      "telefono": "+5491138393399",
+      "email": "martin.lij@email.com",
+      "fueAutoridadAntes": true,
+      "cumplioCapacitacion": true,
+      "esAfiliado": true,
+      "partido": "Partido X",
+      "interesadoEnCharlas": false,
+      "charlaId": null
+    }
+  ]
+}
