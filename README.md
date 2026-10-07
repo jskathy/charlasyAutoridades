@@ -3,8 +3,8 @@
 Prueba de concepto de la materia Ingeniería de Software (UNGS). Cubre dos casos de uso: **consultar charlas** (con su sede ubicada en un mapa) e **inscribirse como postulante** a autoridad de mesa.
 
 ## Requisitos
-- [Node.js](https://nodejs.org) 18 o superior (probado con Node 22).
-- Conexión a internet: el mapa usa la API de USIG (GCBA), Leaflet y OpenStreetMap. No se necesitan claves ni cuentas.
+- [Node.js](https://nodejs.org) 22.12 o superior 
+
 
 ## Cómo iniciarlo
 ```bash
@@ -26,6 +26,6 @@ Para verificar las reglas de negocio y la integración con USIG (sin internet, c
 | `db.json` | Datos de ejemplo: 24 distritos, 5 sedes, 5 charlas y 2 postulantes |
 
 ## Decisiones
-- **Persistencia: json-server.** Expone `db.json` como una API REST sin instalar ni configurar una base de datos. Es suficiente para una prueba de concepto y el front no cambiaría si más adelante se reemplaza por una base real.
-- **Mapa: API de USIG + Leaflet.** La dirección de la sede se envía a `servicios.usig.buenosaires.gob.ar/normalizar/`, y las coordenadas de la respuesta se usan para ubicar el punto. No hay coordenadas cargadas a mano: se puede probar cualquier dirección desde "Probar con otra dirección".
-- **Limitación conocida:** las validaciones se hacen solo en el navegador; json-server no valida lo que recibe.
+- **Persistencia: json-server.** Expone `db.json` como una API REST sin instalar ni configurar una base de datos. Asimismo, en un futuro permitira reemplazar el backend sin alterar el flujo del prototipo.
+- **Mapa: API de USIG + Leaflet.** La dirección de la sede se envía a `servicios.usig.buenosaires.gob.ar/normalizar/`, y las coordenadas de la respuesta se usan para ubicar el punto en el mapa.
+- las validaciones se hacen solo en el navegador; json-server no valida lo que recibe.
